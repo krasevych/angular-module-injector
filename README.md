@@ -27,7 +27,7 @@ You can change inject modules like into angular 2:
 
 Before:
 
-```
+```bash
 import {Dialog} from './components/dialog';
 import {Dashboard} from './components/dashboard';
 export class Header {
@@ -43,7 +43,7 @@ angular.module('header', [
 
 After:
 
-```
+```bash
 import {Dialog} from './components/dialog';
 import {Dashboard} from './components/dashboard';
 export class Header {
