@@ -22,3 +22,38 @@ bower install angular-module-injector
 </body>
 ```
 
+## Overview
+You can change inject modules like into angular 2:
+
+Before:
+
+```
+import {Dialog} from './components/dialog';
+import {Dashboard} from './components/dashboard';
+export class Header {
+}
+angular.module('header', [
+        'myDialog',
+        'myDashboard'
+    ])
+    .component('header', {
+        controller: Header
+    });
+```
+
+After:
+
+```
+import {Dialog} from './components/dialog';
+import {Dashboard} from './components/dashboard';
+export class Header {
+}
+angular.module(Header, [
+        Dialog,
+        Dashboard
+    ])
+    .component('header', {
+        controller: Header
+    });
+```
+
