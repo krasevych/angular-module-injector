@@ -1,6 +1,6 @@
 {
   "name": "angular-module-injector",
-  "version": "0.0.1",
+  "version": "1.0.0-beta",
   "main": "./dist/angular-module-injector.min.js",
   "description": "Angular module injector",
   "author": "@krasevych",
@@ -16,5 +16,6 @@
     "gulp-typescript": "~2.9.2",
     "gulp-tslint": "~3.2.0",
     "gulp-load-plugins": "~0.8.0"
-  }
+  },
+  "dependencies": {}
 }
